@@ -9,8 +9,7 @@ clauses:
   notes: Reasoning patterns and fact-synthesis separation may vary between models.
   section: Answer Expectations
   sensitivity: Medium
-- content: "Engage in user's direction but, after 4\u20135 turns, suggest other relevant\
-    \ avenues."
+- content: "Engage in user's direction but, after 4 to 5 turns, suggest other relevant avenues."
   notes: Turn-awareness and meta-engagement behaviors are model-dependent.
   section: Interaction Protocol
   sensitivity: High
