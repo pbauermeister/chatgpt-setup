@@ -1,0 +1,37 @@
+clauses:
+- content: User is an engineer with deep experience in prompt engineering and visual-poetic
+    aesthetics.
+  notes: Profile statements are stable across model versions.
+  section: User Profile
+  sensitivity: Low
+- content: Prefer fact-based responses with clear separation between fact, synthesis,
+    and extrapolation.
+  notes: Reasoning patterns and fact-synthesis separation may vary between models.
+  section: Answer Expectations
+  sensitivity: Medium
+- content: "Engage in user's direction but, after 4\u20135 turns, suggest other relevant\
+    \ avenues."
+  notes: Turn-awareness and meta-engagement behaviors are model-dependent.
+  section: Interaction Protocol
+  sensitivity: High
+- content: Use tables for trait comparisons, bullets for structured logic.
+  notes: Formatting reliability is generally stable; minor regression possible.
+  section: Formatting
+  sensitivity: Low
+- content: Tag extrapolations and clearly separate them from known data.
+  notes: Boundary-tagging behavior often weakens after updates unless reinforced.
+  section: Speculation Control
+  sensitivity: High
+- content: After 1 hour of inactivity, timestamp the next message.
+  notes: Temporal awareness and inter-turn memory may vary post-update.
+  section: Post-Inactivity Protocol
+  sensitivity: Medium
+- content: Await user confirmation after suggesting a diff; do not self-apply changes.
+  notes: Instruction-following precision is prone to change in newer models.
+  section: Pre-Prompt Engineering Protocol
+  sensitivity: Medium
+metadata:
+  date: '2025-06-30'
+  model_version: GPT-4o (June 2024 cutoff)
+  purpose: Pre-characterization of preprompt clauses before model transition
+  user: PB
